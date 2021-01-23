@@ -14,6 +14,9 @@ Janet = BMI.new(1.6, 55)
 Janet.calculate_BMI
 
 
+
+
+
 # ABSTRACTION
 class New_member
   def initialize(name, add_points=false)
@@ -33,6 +36,9 @@ end
 
 Reg = New_member.new("Reg", true)
 Reg.total_points
+
+
+
 
 
 # POLYMORPHISM (INHERITANCE)
@@ -64,6 +70,9 @@ Jane.introduction
 
 Liz = Senior.new("Liz", "Jones")
 Liz.introduction
+
+
+
 
 
 # POLYMORPHISM (DUCK-TYPING)

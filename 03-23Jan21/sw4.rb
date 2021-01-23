@@ -1,4 +1,5 @@
 =begin
+
 1. We have a Confection class representing baked desserts. 
 Your job is to create a new subclass of Confection, named Cupcake and Banana Cake. 
 Cupcakes and Banana Cakes need to be baked just like other confections, but cupcakes also need to be frosted afterward. 
@@ -82,9 +83,7 @@ class Buyer < User
 end
 
 
-
 ## execute
-
 my_admin = Admin.new('avionuser', 'password', '127.0.0.1')
 my_admin.admin_login
 my_admin.edit_users_profile

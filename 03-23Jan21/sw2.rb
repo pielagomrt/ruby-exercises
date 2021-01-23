@@ -1,4 +1,5 @@
 # Create an object
+
 class Student
   def initialize(first_name,last_name,age,id)
     @first = first_name
