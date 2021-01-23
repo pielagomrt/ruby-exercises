@@ -14,14 +14,15 @@ You can assume, for the purpose of this challenge, that the supplied array will 
 =end
 
 def is_min(*x)
-    num = x[0]
+  num = x[0]
   for i in 0...x.length
     if x[i] < num
       num = x[i]
     end
-    puts num
   end
+  puts num
 end
 
+
 is_min 34, 15, 88, 2
-# is_min 34, -345, -1, 100
+is_min 34, -345, -1, 100
