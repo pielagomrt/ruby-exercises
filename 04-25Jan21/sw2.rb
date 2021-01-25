@@ -1,4 +1,4 @@
-# SOLID PRINCIPLES
+# SOLID Principles
 
 # Single Responsibility Principle
 class Average
@@ -13,7 +13,8 @@ class Average
   end
 end
 
-average = Average.new(90,88).get_average
+# execute
+Average.new(90,88).get_average
 
 
 
@@ -36,14 +37,15 @@ class Volunteer < Member
   end
 end
 
-Jane = Officer.new("Jane").identify
-Liz = Volunteer.new("Liz").identify
+# execute
+Officer.new("Jane").identify
+Volunteer.new("Liz").identify
 
 
 
 # Liskov Substitution Principle
 class Animal
-  def to_s # string representation of an object
+  def to_s        # to_s = string representation of an object
     "I\'m a pet!"
   end
 end
@@ -66,10 +68,10 @@ class Pet
   end
 end
 
-pet = Pet.new
-pet.greet(Animal.new)
-pet.greet(Cat.new)
-pet.greet(Dog.new)
+# execute
+Pet.new.greet(Animal.new)
+Pet.new.greet(Cat.new)
+Pet.new.greet(Dog.new)
 
 
 
@@ -96,8 +98,9 @@ class Client
   end
 end
 
-supervisor = Employee.new.access
-pharma = Client.new.access
+# execute
+Employee.new.access
+Client.new.access
 
 
 
@@ -124,8 +127,9 @@ class Dog
   end
 end
 
-cat = Cat_or_dog.new.this_cat
-dog = Cat_or_dog.new.this_dog
+# execute
+Cat_or_dog.new.this_cat
+Cat_or_dog.new.this_dog
 
 
  
