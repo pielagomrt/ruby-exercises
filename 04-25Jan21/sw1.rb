@@ -16,7 +16,7 @@ For input [0, 0, 0, 0, 0, 0, 0, 0, 0] => [0,0]
 def count_or_sum(*x)
   arr = [0,0]
   if x.length <= 0
-    puts arr
+    return arr
   end
 
   for i in 0...x.length
@@ -26,7 +26,7 @@ def count_or_sum(*x)
       arr[0] += 1
     end
   end
-  puts arr
+  return arr
 end
 
 count_or_sum 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15
