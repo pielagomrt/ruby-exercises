@@ -13,7 +13,7 @@ class Average
   end
 end
 
-# execute
+# execution
 Average.new(90,88).get_average
 
 
@@ -37,7 +37,7 @@ class Volunteer < Member
   end
 end
 
-# execute
+# execution
 Officer.new("Jane").identify
 Volunteer.new("Liz").identify
 
@@ -68,7 +68,7 @@ class Pet
   end
 end
 
-# execute
+# execution
 Pet.new.greet(Animal.new)
 Pet.new.greet(Cat.new)
 Pet.new.greet(Dog.new)
@@ -98,7 +98,7 @@ class Client
   end
 end
 
-# execute
+# execution
 Employee.new.access
 Client.new.access
 
@@ -127,7 +127,7 @@ class Dog
   end
 end
 
-# execute
+# execution
 Cat_or_dog.new.this_cat
 Cat_or_dog.new.this_dog
 
