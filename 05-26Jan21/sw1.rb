@@ -13,13 +13,13 @@ time = 11.8--> litres = 5
 =end
 
 
-def hours(*x)
-  for i in 0...x.length
-    ltr_dec = (0.5 * x[i]).to_f
+def litres(*time)
+  for i in 0...time.length
+    ltr_dec = (0.5 * time[i]).to_f
     dec = ltr_dec % 1
     ltr = ltr_dec - dec
-    puts "litres = " + (ltr.to_i).to_s
+    return "litres = " + (ltr.to_i).to_s
   end
 end
 
-hours 3, 6.7, 11.8
+litres 3, 6.7, 11.8
