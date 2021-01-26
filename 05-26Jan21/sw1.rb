@@ -16,9 +16,7 @@ time = 11.8--> litres = 5
 def litres(*time)
   for i in 0...time.length
     ltr_dec = (0.5 * time[i]).to_f
-    dec = ltr_dec % 1
-    ltr = ltr_dec - dec
-    return "litres = " + (ltr.to_i).to_s
+    puts "litres = " + (ltr_dec.to_i).to_s
   end
 end
 
