@@ -5,7 +5,7 @@ Disemvowel Trolls
 Trolls are attacking your comment section!
 
 A common way to deal with this situation is to remove all of the vowels from the trolls’ comments, neutralizing the threat.
-Your task is to write a function that takes a string and return a new string with all vowels removed.
+Your task is to write a function that takes a stringing and return a new stringing with all vowels removed.
 
 For example:
 "This website is for losers LOL!" => "Ths wbst s fr lsrs LL!".
@@ -15,21 +15,8 @@ For example:
 
 
 def disemvowel(string)
-  for i in 0...string.length
-    if string[i] === "a" || 
-       string[i] === "e" || 
-       string[i] === "i" || 
-       string[i] === "o" || 
-       string[i] === "u" ||
-       string[i] === "A" || 
-       string[i] === "E" || 
-       string[i] === "I" || 
-       string[i] === "O" || 
-       string[i] === "U"
-          string[i] = ""
-    end
-  end
-  puts string
+  str = string.gsub(/[aeiou]/i, '')  # g - find all matches (gsub - substitute all matches) ; i - case sensitive
+  puts str
 end
 
 
