@@ -9,6 +9,7 @@ Your task is to write a function that takes a string and return a new string wit
 
 For example:
 "This website is for losers LOL!" => "Ths wbst s fr lsrs LL!".
+"No offense but, Your writing is among the worst I've ever read"
 
 =end
 
@@ -33,3 +34,4 @@ end
 
 
 disemvowel "This website is for losers LOL!"
+disemvowel "No offense but, Your writing is among the worst I've ever read"
