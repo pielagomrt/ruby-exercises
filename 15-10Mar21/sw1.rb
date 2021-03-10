@@ -16,12 +16,10 @@ is_sorted_and_how([4, 2, 30]) =>  'no'
 =end
 
 def is_sorted_and_how(arr)
-  if arr === arr.sort
-    puts 'yes, ascending'
-  elsif arr === arr.sort.reverse
-    puts 'yes, descending'
-  else
-    puts 'no'
+  case arr
+    when arr.sort then puts 'yes, ascending'
+    when arr.sort.reverse then puts 'yes, descending'
+    else puts 'no'
   end
 end
 
