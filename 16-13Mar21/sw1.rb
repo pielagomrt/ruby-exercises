@@ -24,7 +24,7 @@ def iq_test(num)
   for i in arr
     if i.to_i.even?
       even.push(i)
-  else
+    else
       odd.push(i)
     end
   end
