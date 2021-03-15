@@ -1,6 +1,7 @@
 =begin
 
 IQ Test
+
 Bob is preparing to pass IQ test. 
 
 The most frequent task in this test is to find out which one of the given numbers differs from the others. 
