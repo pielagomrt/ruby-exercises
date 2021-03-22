@@ -21,7 +21,7 @@ def up_array(arr)
     x = nil
   else
     for i in 0...arr.length
-      if arr.any? { |i| i < 0 || i > 9 } || arr.empty?
+      if arr.any? { |i| i < 0 || i > 9 }
         x = nil
       else
         x = arr.join("").to_i + 1
