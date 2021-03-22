@@ -24,7 +24,8 @@ def up_array(arr)
       if arr.any? { |i| i < 0 || i > 9 }
         x = nil
       else
-        x = arr.join("").to_i + 1
+        a = arr.join("").to_i + 1
+        x = a.to_s.each_char.each_slice(1).map{ |x| x.join }
       end
     end
   end
